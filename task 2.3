@@ -1,0 +1,25 @@
+Module Module1
+
+    Sub Main()
+        Dim s As String = ""
+        Dim MyChar1 As String = ""
+        Dim Rep As Char = "*"
+        Dim Rep2 As String = ""
+
+
+
+        Console.WriteLine("Enter String")
+        s = Console.ReadLine()
+        Rep2 = Mid(s, 2)
+
+        MyChar1 = Left(s, 1)
+        Rep = "*"
+        s = Rep2.Replace(MyChar1, Rep)
+        Console.WriteLine(MyChar1 & s)
+        Console.ReadKey()
+
+
+
+    End Sub
+
+End Module
