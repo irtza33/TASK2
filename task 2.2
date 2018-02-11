@@ -1,0 +1,21 @@
+Module Module1
+
+    Sub Main()
+        Dim s As String = ""
+        Dim MyChar1 As String = ""
+        Dim MyChar2 As String = ""
+        Console.WriteLine("Enter String")
+        s = Console.ReadLine
+        If Len(s) >= 2 Then
+            MyChar1 = Left(s, 2)
+            MyChar2 = Right(s, 2)
+            Console.WriteLine(MyChar1 & MyChar2)
+        Else
+            Console.WriteLine("")
+        End If
+        Console.ReadKey()
+
+
+    End Sub
+
+End Module
