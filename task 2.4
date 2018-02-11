@@ -1,0 +1,21 @@
+Module Module1
+
+    Sub Main()
+        Dim Str1 As String = ""
+        Dim Str2 As String = ""
+        Dim Rep As String = ""
+        Dim Rep2 As String = ""
+        Dim Space As Char = ""
+        Console.WriteLine("Enter String1")
+        Str1 = Console.ReadLine
+        Console.WriteLine("Enter String2")
+        Str2 = Console.ReadLine
+        Rep = Left(Str1, 2)
+        Rep2 = Left(Str2, 2)
+        Str1 = Str1.Replace(Rep, Rep2)
+        Str2 = Str2.Replace(Rep2, Rep)
+        Console.WriteLine(Str1 & Space & Str2)
+        Console.ReadKey()
+    End Sub
+
+End Module
